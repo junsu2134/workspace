@@ -1,0 +1,9 @@
+package edu.kh.project.member.model.dao;
+
+import org.springframework.stereotype.Repository;
+
+// Repository : 저장소라는 의미를 가지고 있음
+@Repository
+public class MemberDAO {
+
+}

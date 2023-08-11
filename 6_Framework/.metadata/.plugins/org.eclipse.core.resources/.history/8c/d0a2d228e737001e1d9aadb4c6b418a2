@@ -1,0 +1,21 @@
+package edu.kh.project.member.model.dao;
+
+import org.springframework.stereotype.Repository;
+
+import edu.kh.project.member.model.dto.Member;
+
+// Repository : 저장소라는 의미를 가지고 있음
+
+@Repository // Persistence Layer, 영속성 관련 클래스
+//			(파일, DB 관련 클래스) + Bean으로 등록 가능(== spring이 객체로 만들어둠)
+public class MemberDAO {
+
+	/** 로그인 DAO
+	 * @param inputMember
+	 * @return 회원 정보 또는 null
+	 */
+	public Member login(Member inputMember) {
+		return null;
+	}
+
+}
