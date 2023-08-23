@@ -1,9 +1,0 @@
-package edu.kh.project.member.model.service;
-
-import org.springframework.stereotype.Service;
-
-@Service // Service Layer : 서비스를 담당하는 개층
-		 // 비즈니스 로직을 작성한다.
-public class MemberServiceImpl implements MemberService{
-
-}

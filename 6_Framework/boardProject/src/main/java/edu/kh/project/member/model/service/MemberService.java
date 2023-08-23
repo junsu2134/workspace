@@ -4,14 +4,12 @@ import edu.kh.project.member.model.dto.Member;
 
 // Service Interface 사용 이유
 
-// 1. 프로젝트에 규칙성을 부여하기 위해서
+// 1. 프로젝트 규칙성을 부여하기 위해서
 
 // 2. 클래스간의 결합도를 약화 시키기 위해서(객체 지향적 설계)
 
-// MemberService service = new MemberService(); -> 안됌 interface라서 객체 생성 불가
-// MemberService service = new MemberServiceImpl(); -> interface에선 이렇게 작성을 한다.
-
 // 3. Spring AOP 사용을 위해서
+
 
 
 public interface MemberService {
@@ -22,5 +20,10 @@ public interface MemberService {
 	 */
 	Member login(Member inputMember);
 
-	
+	/** 회원 가입 서비스(비밀번호 암호화 필요)
+	 * @param inputMember
+	 * @return result(0:실패, 1:성공)
+	 */
+	int signUp(Member inputMember);
+
 }
